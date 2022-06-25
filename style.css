@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&display=swap') * {
+    margin: 0;
+    padding: 0;
+
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.896);
+    transition: transform 0.2s ease-in;
+    height: 100vh;
+
+}
+
+.sidebar nav {
+    padding: 0px;
+}
+
+.sidebar nav li {
+
+    list-style-type: none;
+
+    font-size: 15px;
+    padding: 38px;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar nav li a {
+
+    list-style-type: none;
+    font-size: 15px;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.main {
+    background-color: white;
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    background-color: rgb(205, 205, 205);
+    height: 74vh;
+    width: 67vw;
+    margin: 80px auto;
+    margin-left: 237px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devPic img {
+    width: 197px;
+}
+
+.hi {
+
+    font-size: 63px;
+    font-weight: 400;
+    padding-top: 205px;
+}
+
+.iAm {
+    font-size: 27px;
+}
+
+.about {
+    /*font-family: 'Dancing Script', cursive;*/
+    font-weight: bold;
+}
+
+.buttons button {
+    margin: 6px;
+    padding: 4px;
+    border-radius: 12px;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: none;
+    text-decoration-line: none;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttons button a:hover {
+    color: white;
+    background-color: black;
+}
+
+.buttons button:hover {
+    color: white;
+    background-color: black;
+}
+
+.skillMain {
+    background-color: white;
+    width: 90vw;
+}
+
+.skillContainer {
+    background-color: rgb(205, 205, 205);
+    height: 74vh;
+    width: 77vw;
+    margin: 80px auto;
+    margin-left: 237px;
+    display: flex;
+
+}
+
+.heading {
+    padding-top: 45px;
+    padding-left: 33px;
+    font-size: 30px;
+    font-weight: bold
+}
+
+.skills {
+    width: 133px;
+    height: 5px;
+    background-color: green;
+}
+
+.skillItem {
+
+    display: flex;
+    margin: 42px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skillImg img {
+    width: 472px;
+    padding-left: 300px;
+
+}
+
+.contactMain {
+    background-color: white;
+    width: 90vw;
+}
+
+.contactContainer {
+    background-color: rgb(205, 205, 205);
+    height: 74vh;
+    width: 77vw;
+    margin: 80px auto;
+    margin-left: 237px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.contactHeading {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 33px;
+    font-size: 35px;
+    font-weight: bold
+}
+
+.contactItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItems input {
+    border-radius: 9px;
+    padding: 3px;
+    margin: 5px;
+}
+
+
+.aboutMain {
+    background-color: rgb(252, 250, 254);
+    width: 90vw;
+}
+
+.aboutContainer {
+    background-color: rgb(205, 205, 205);
+    height: 74vh;
+    width: 77vw;
+    margin: 80px auto;
+    margin-left: 237px;
+    display: flex;
+}
+
+.faceImg img {
+    width: 427px;
+    height: 527px;
+    margin-left: 60px;
+}
+
+.aboutInfo {
+    flex-direction: column;
+    padding-left: 40px;
+
+}
+.me {
+    font-size: 17px;
+    font-style: oblique;
+}
+
+.hii {
+
+    font-size: 63px;
+    font-weight: 400;
+    padding-top: 205px;
+}
+
+.name {
+    font-size: 27px;
+}
+
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 198px;
+    margin-top: 10px;
+}
+
+.sidebarGo {
+    position: absolute;
+    transform: translate(-443px, 0px);
+
+}
+
+.certificateMain {
+    background-color: white;
+    width: 90vw;
+}
+
+.certificateContainer {
+    background-color: rgb(205, 205, 205);
+    height: 74vh;
+    width: 77vw;
+    margin: 80px auto;
+    margin-left: 237px;
+}
+
+.headerContiner {
+    background-color: gray;
+}
+
+.certificateHeading {
+    margin: 32px;
+}
+
+.list li {
+    list-style: none;
+}
+
+.certificateContainer {
+    display: flex;
+    flex-direction: column;
+}
