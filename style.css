@@ -8,7 +8,7 @@
 
 .sidebar {
     position: absolute;
-    background-color: rgba(17, 17, 17, 0.896);
+    background-color: rgb(2,2,2);
     transition: transform 0.2s ease-in;
     height: 100vh;
 
@@ -47,11 +47,11 @@
 }
 
 .infoContainer {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(0,21,63);
     height: 74vh;
     width: 67vw;
     margin: 80px auto;
-    margin-left: 237px;
+    margin-left: 234px;
     display: flex;
     justify-content: space-around;
 }
@@ -65,15 +65,19 @@
     font-size: 63px;
     font-weight: 400;
     padding-top: 205px;
+    color:white
+    ;
 }
 
 .iAm {
     font-size: 27px;
+    color:white
 }
 
 .about {
     /*font-family: 'Dancing Script', cursive;*/
     font-weight: bold;
+    color:white
 }
 
 .buttons button {
@@ -94,12 +98,12 @@
 
 .buttons button a:hover {
     color: white;
-    background-color: black;
+    background-color: rgb(0,101,195);
 }
 
 .buttons button:hover {
     color: white;
-    background-color: black;
+    background-color: rgb(0,101,195);
 }
 
 .skillMain {
@@ -108,11 +112,11 @@
 }
 
 .skillContainer {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(0,21,63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
-    margin-left: 237px;
+    margin-left: 234px;
     display: flex;
 
 }
@@ -121,13 +125,14 @@
     padding-top: 45px;
     padding-left: 33px;
     font-size: 30px;
-    font-weight: bold
+    font-weight: bold;
+    color: white;
 }
 
 .skills {
     width: 133px;
     height: 5px;
-    background-color: green;
+    background-color: rgb(182,101,61);
 }
 
 .skillItem {
@@ -136,6 +141,7 @@
     margin: 42px;
     flex-direction: row;
     justify-content: space-evenly;
+    color: white
 }
 
 .skillImg img {
@@ -150,11 +156,11 @@
 }
 
 .contactContainer {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(0,21,63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
-    margin-left: 237px;
+    margin-left: 234px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -168,12 +174,14 @@
     padding-bottom: 45px;
     padding-left: 33px;
     font-size: 35px;
-    font-weight: bold
+    font-weight: bold;
+    color: white;
 }
 
 .contactItems {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .contactItems input {
@@ -189,11 +197,11 @@
 }
 
 .aboutContainer {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(0,21,63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
-    margin-left: 237px;
+    margin-left: 234px;
     display: flex;
 }
 
@@ -211,6 +219,7 @@
 .me {
     font-size: 17px;
     font-style: oblique;
+    color: white;
 }
 
 .hii {
@@ -218,10 +227,12 @@
     font-size: 63px;
     font-weight: 400;
     padding-top: 205px;
+    color: white;
 }
 
 .name {
     font-size: 27px;
+    color: white
 }
 
 
@@ -249,23 +260,26 @@
 }
 
 .certificateContainer {
-    background-color: rgb(205, 205, 205);
+    background-color:  rgb(0,21,63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
-    margin-left: 237px;
+    margin-left: 234px;
 }
 
 .headerContiner {
-    background-color: gray;
+    background-color: rgb(0,101,195);
 }
 
 .certificateHeading {
     margin: 32px;
+    background-color:   rgb(0,101,195);
+    color: white;
 }
 
 .list li {
     list-style: none;
+    color: white;
 }
 
 .certificateContainer {
