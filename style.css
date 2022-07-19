@@ -8,7 +8,7 @@
 
 .sidebar {
     position: absolute;
-    background-color: rgb(2,2,2);
+    background-color: rgb(2, 2, 2);
     transition: transform 0.2s ease-in;
     height: 100vh;
 
@@ -47,7 +47,7 @@
 }
 
 .infoContainer {
-    background-color: rgb(0,21,63);
+    background-color: rgb(0, 21, 63);
     height: 74vh;
     width: 67vw;
     margin: 80px auto;
@@ -65,19 +65,38 @@
     font-size: 63px;
     font-weight: 400;
     padding-top: 205px;
-    color:white
-    ;
+    color: white;
 }
 
 .iAm {
     font-size: 27px;
-    color:white
+    color: white;
+    padding: 3px;
 }
 
 .about {
     /*font-family: 'Dancing Script', cursive;*/
     font-weight: bold;
-    color:white
+    color: white;
+    padding: 3px;
+    position: relative;
+    animation-name: about;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+<@keyframes .about {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 .buttons button {
@@ -98,12 +117,12 @@
 
 .buttons button a:hover {
     color: white;
-    background-color: rgb(0,101,195);
+    background-color: rgb(0, 101, 195);
 }
 
 .buttons button:hover {
     color: white;
-    background-color: rgb(0,101,195);
+    background-color: rgb(0, 101, 195);
 }
 
 .skillMain {
@@ -112,7 +131,7 @@
 }
 
 .skillContainer {
-    background-color: rgb(0,21,63);
+    background-color: rgb(0, 21, 63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
@@ -132,7 +151,7 @@
 .skills {
     width: 133px;
     height: 5px;
-    background-color: rgb(182,101,61);
+    background-color: rgb(182, 101, 61);
 }
 
 .skillItem {
@@ -156,7 +175,7 @@
 }
 
 .contactContainer {
-    background-color: rgb(0,21,63);
+    background-color: rgb(0, 21, 63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
@@ -197,7 +216,7 @@
 }
 
 .aboutContainer {
-    background-color: rgb(0,21,63);
+    background-color: rgb(0, 21, 63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
@@ -208,18 +227,26 @@
 .faceImg img {
     width: 427px;
     height: 527px;
-    margin-left: 60px;
+    margin-left: 40px;
+    display: inline;
 }
 
 .aboutInfo {
     flex-direction: column;
-    padding-left: 40px;
 
+    margin-left: 50px;
+    margin-top: 103px;
+    margin-right: 40px;
+    display: inline;
 }
+
 .me {
     font-size: 17px;
     font-style: oblique;
     color: white;
+    display: inline;
+    text-align: justify;
+
 }
 
 .hii {
@@ -228,11 +255,16 @@
     font-weight: 400;
     padding-top: 205px;
     color: white;
+    display: inline;
+
 }
 
 .name {
     font-size: 27px;
-    color: white
+    color: white;
+    display: inline;
+
+
 }
 
 
@@ -260,7 +292,7 @@
 }
 
 .certificateContainer {
-    background-color:  rgb(0,21,63);
+    background-color: rgb(0, 21, 63);
     height: 74vh;
     width: 77vw;
     margin: 80px auto;
@@ -268,12 +300,12 @@
 }
 
 .headerContiner {
-    background-color: rgb(0,101,195);
+    background-color: rgb(0, 101, 195);
 }
 
 .certificateHeading {
     margin: 32px;
-    background-color:   rgb(0,101,195);
+    background-color: rgb(0, 101, 195);
     color: white;
 }
 

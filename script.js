@@ -10,7 +10,7 @@ else{
     document.querySelector('.cross').style.display='inline'
     setTimeout(()=>{
     document.querySelector('.ham').style.display='none'
-},200)
+},100)
 }
 })
 function fn1()
