@@ -13,23 +13,24 @@ else{
 },100)
 }
 })
-function fn1()
+
+function fn2()
 {
-    var str=document.getElementById('firstName').value;
-    alert("Thank You")
+    
+    alert("Comming Soon");
 }
-function fn1()
-{
-    var str=document.getElementById('lastnane').value;
-    alert("Thank You")
-}
-function fn1()
-{
-    var str=document.getElementById('email').value;
-    alert("Thank You")
-}
-function fn1()
-{
-    var str=document.getElementById('message').value;
-    alert("Thank You")
-}
+
+let icon = document.getElementById('img');
+icon.addEventListener("click",(e)=>{
+    console.log('j');
+    document.querySelector('.popup').classList.add('open-popup')
+})
+
+let close = document.getElementById('closebtn');
+close.addEventListener("click",(e)=>{
+    console.log('h');
+    document.querySelector('.popup').classList.remove('open-popup');
+})
+
+
+

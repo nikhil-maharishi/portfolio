@@ -16,40 +16,95 @@
 
             <nav>
                 <ul>
-                    <li><a href="/portfolio"> Home</a></li>
-                    <li><a href="/portfolio/about.html">About</a></li>
-                    <li><a href="/portfolio/skill.html">Skill</a></li>
-                    <li><a href="/portfolio/certificate.html">Certificate</a></li>
-                    
-                    <li><a href="/portfolio/contact.html">Contact</a></li>
+                    <li><a href="/"> Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/skill.html">Skill</a></li>
+                    <li><a href="/certificate.html">Certificate</a></li>
+
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="contactMain">
+
             <div class="contactContainer">
+
+                <div class="item1">Let's Have Conversation !</div>
+                <div class="item2">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+
+                </div>
+                <div class="item3">
+                    <label for="fname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div class="item4">
+                    <label for="fname">Email:</label>
+                    <input type="email" id="mail" name="email">
+                </div>
+                <div class="item5">
+                    <label for="fname">Message:</label>
+                    <textarea type="text" id="msg" name="msg" rows="30" style="    max-height: 6rem;
+                  max-width: 20rem; min-height: 1.5rem;"></textarea>
+                </div>
+                <div class="item6"><button type="button" id="submit">Send</button></div>
+
+            </div>
+            <!-- <div class="contactContainer">
                 <div class="contactHeading">Let's have a conversation !</div>
+                
                 <div class="contactItems">
-
                     <label for="Email">First Name:</label>
-                    <input type="text" id="firstName" class="form-control">
-                    <label for="Email">Last Name:</label>
-                    <input type="text" id="lastName" class="form-control">
+                        <input type="text" id="firstName" class="form-control">
+                        <label for="Email">Last Name:</label>
+                        <input type="text" id="lastName" class="form-control">
+                    
+                    
+                    
                     <label for="Email">Email:</label>
-                    <input type="text" id="email" class="form-control">
-
+                        <input type="text" id="email" class="form-control">
+                    
+                    
+                    
                     <label for="Email">Message:</label>
-                    <input type="text" id="message" class="form-control">
-
+                        <input type="text" id="message" class="message" rows="3">
+                    
+                    
 
                 </div>
                 <div class="buttons"><button onclick="fn1()">sent</button></div>
 
                 
-            </div>
+            </div>-->
+            <footer>
+
+
+                <div class="footerContainer">
+                    <div class="item">Phone</div>
+                    <div class="item">Email</div>
+                    <div class="item">Feedback</div>
+                    <div class="item"><a href="tel:+91702-330-2271">+917023302271</a></div>
+                    <div class="item"><a href="mailto:nikhilmaharishi@gmail.com">nikhilmaharishi@gmail.com</a></div>
+                    <div class="item"></div>
+                </div>
+
+
+            </footer>
 
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        let submit = document.getElementById('submit');
+        
+        submit.addEventListener("click", (e) => {
+            
+            document.getElementById('fname').value = '';
+            document.getElementById('lname').value = '';
+            document.getElementById('mail').value = '';
+            document.getElementById('msg').value = '';
+        })
+    </script>
 </body>
 
 </html>

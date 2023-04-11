@@ -1,45 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&display=swap') * {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&display=swap') ;
+body{
     margin: 0;
     padding: 0;
-
+   box-sizing: border-box;  
+}
+.footerContainer{
+    margin-top: 4rem;
+      display:grid;
+    background-color:rgb(255,250,250);
+    width:95rem;
+    height: 50px;
+    grid: auto/ auto auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
+    justify-items: center;
+    border-style: inset;
+}
+.item{
+    background-color: rgb(255,250,250);
+    list-style-type: none;
+    color: black;
+}
+.item a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     background-color: rgb(2, 2, 2);
-    transition: transform 0.2s ease-in;
-    height: 100vh;
+    transition: transform 0.4s,step-start;
+    height: 9.6rem;
+    display: flex;
+    align-items: center;
+    width: 95.3rem;
 
 }
 
-.sidebar nav {
-    padding: 0px;
+.header {
+
+    /* font-family: 'Dancing Script', cursive;
+    background-color: rgb(0, 21, 63);*/
+    border-style: outset;
+    border-radius: 0.5rem;
+    color: black;
+    text-align: center;
+    height: 2.3rem;
+    width: 93rem;
+    font-size: 2rem;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    background-color: rgb(255,250,250);
+
+}
+.icon{
+    width: 4rem;
+    margin-left: 39rem;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+}
+
+.popup{
+    background-color: cornsilk;
+    width: 600px;
+    border-radius: 6px;
+    position: absolute;
+    top:-10%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    box-shadow: 15px 15px 5px rgb(0 0 0 / 10%);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.sidebar nav ul{
+    display: flex;
 }
 
 .sidebar nav li {
 
     list-style-type: none;
-
-    font-size: 15px;
-    padding: 38px;
+    
+    font-size: 0.9375rem;
+    padding: 2.375rem;
     color: white;
     font-weight: bold;
 }
 
 .sidebar nav li a {
-
+    text-decoration: none;
     list-style-type: none;
-    font-size: 15px;
-    padding: 25px;
+    font-size: 0.9375rem;
+    padding: 1.5625rem;
     color: white;
     font-weight: bold;
+}
+.sidebar nav li a:after{
+    content: '';
+    display: block;
+    background-color:whitesmoke;
+    position: absolute;
+    height:0.4rem;
+    width:0rem;
+    bottom: 3.5rem;
+    transition: all ease-in-out 225ms;
+}
+.sidebar nav li a:hover::after{
+    width:7rem ;
+
 }
 
 .main {
     background-color: white;
-    width: 90vw;
+    width: 100%;
 }
 
 .container {
@@ -47,38 +131,77 @@
 }
 
 .infoContainer {
-    background-color: rgb(0, 21, 63);
-    height: 74vh;
-    width: 67vw;
-    margin: 80px auto;
-    margin-left: 234px;
+    background-color: rgb(229, 228, 226);
+    height: 34.808rem;
+    width: 95rem;
+    margin: 5rem auto;
+    /*margin-left: 14.625rem;*/
     display: flex;
     justify-content: space-around;
+    
 }
 
-.devPic img {
-    width: 197px;
+.card {
+    width: 16rem;
+    background-color: white;
+    border-style: groove;
+    border-top-style: none;
+    padding-top: 6.79rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: black;
+
+
+}
+
+.sqrbtn{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    background-color:white;
+    font-size: 1.4rem;
+    float: left;
+    cursor: pointer;
+}
+
+.sqrbtn:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .btn-group button:hover {
+    background-color:rgb(219,215,210);
+    transform: scale(1.35) perspective(1px);
+    
+  }
+
+/*.devPic img {
+    width: 12.313rem;
+}*/
+.devInfo{
+    padding-left: 4rem;
 }
 
 .hi {
 
-    font-size: 63px;
-    font-weight: 400;
-    padding-top: 205px;
-    color: white;
+    font-size: 5rem;
+    padding-top: 12rem
 }
 
 .iAm {
-    font-size: 27px;
-    color: white;
-    padding: 3px;
+    font-size: 2.688rem;
+    /* color: white;*/
+    padding: 0.188rem;
 }
 
 .about {
-    /*font-family: 'Dancing Script', cursive;*/
+
     font-weight: bold;
-    color: white;
-    padding: 3px;
+    /*color: white;*/
+    padding: 0.188rem;
+    font-size: 1.5rem;
     position: relative;
     animation-name: about;
     animation-duration: 2s;
@@ -88,7 +211,7 @@
 }
 
 
-<@keyframes .about {
+@keyframes.about{
 
     from {
         width: 0;
@@ -100,150 +223,252 @@
 }
 
 .buttons button {
-    margin: 6px;
-    padding: 4px;
-    border-radius: 12px;
+    margin: 0.375rem;
+    padding: 0.25rem;
+    border-radius: 0.75rem;
     background-color: white;
     font-weight: bold;
     cursor: pointer;
     font-style: none;
     text-decoration-line: none;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
 }
 
 .buttons button a {
     text-decoration: none;
-    color: black;
+    color:black;
 }
 
 .buttons button a:hover {
     color: white;
-    background-color: rgb(0, 101, 195);
+    background-color: black;
 }
 
 .buttons button:hover {
     color: white;
-    background-color: rgb(0, 101, 195);
+    background-color: black;
 }
 
 .skillMain {
     background-color: white;
-    width: 90vw;
+    width: 100%;
 }
 
 .skillContainer {
-    background-color: rgb(0, 21, 63);
-    height: 74vh;
-    width: 77vw;
-    margin: 80px auto;
-    margin-left: 234px;
+    background-color: rgb(229, 228, 226);
+    height: 34.808rem;
+    width: 95rem;
+    margin: 5rem auto;
+   /* margin-left: 234px;*/
     display: flex;
-
+    margin-top: 10rem;
 }
 
 .heading {
-    padding-top: 45px;
-    padding-left: 33px;
-    font-size: 30px;
+    padding-top:2.813rem;
+    padding-left: 2.063rem;
+    font-size: 1.875rem;
     font-weight: bold;
-    color: white;
+    color: black;
+    margin-left: 17rem;
 }
 
 .skills {
-    width: 133px;
-    height: 5px;
-    background-color: rgb(182, 101, 61);
+    width: 14.313rem;
+    height:1rem;
+    background-color: whitesmoke;
+    border-style: groove;
 }
+.bar1{
+background-color:green;
+width: 12rem;
+height:1rem;
+}
+.bar2{
+    background-color:rgb(229,81,38);
+    width: 12rem;
+    height:1rem;
+}
+.bar3{
+    background-color: rgb(12,115,184);
+    width: 10rem;
+    height:1rem;
+}
+.bar4{
+    background-color: rgb(229,162,40);
+    width: 6rem;
+    height:1rem;
+}
+.bar5{
+    background-color:yellow;
+    width: 4rem;
+    height:1rem;
+}
+
 
 .skillItem {
 
     display: flex;
-    margin: 42px;
+    margin:2.625rem;
     flex-direction: row;
     justify-content: space-evenly;
-    color: white
+    color:black;
+    margin-left: 17rem;
 }
 
 .skillImg img {
-    width: 472px;
-    padding-left: 300px;
+    width:31.1rem;
+    padding-left: 18.75rem;
 
 }
 
 .contactMain {
     background-color: white;
-    width: 90vw;
+    width: 100%;
 }
 
 .contactContainer {
-    background-color: rgb(0, 21, 63);
-    height: 74vh;
-    width: 77vw;
-    margin: 80px auto;
-    margin-left: 234px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    background-color: rgb(229, 228, 226);
+    height: 34.808rem;
+    width: 95rem;
+    margin: 5rem auto;
+   /* margin-left: 234px;*/
+    display: grid;
+   grid-template-columns: 47.5rem 47.5rem;
     align-items: center;
-
+    margin-top: 10rem;
+}
+.item1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.188rem;
+    font-weight: bold;
+    grid-column:1/span 2;
+    justify-self: center;
+}
+.item2 {
+    margin-left: 12rem;
+    font-size: 1.7rem;
+}
+.item2 #fname{
+    margin-left: 2rem;
+    width: 16rem;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
-.contactHeading {
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    padding-left: 33px;
-    font-size: 35px;
-    font-weight: bold;
+.item3{
+    
+    font-size: 1.7rem;
+}
+.item3 #lname{
+    margin-left: 2rem;
+    width: 16rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.item4{
+    margin-left: 12rem;
+    font-size: 1.7em;
+        grid-column: 1/span 2;
+       
+}
+.item4 #mail{
+    margin-left: 4.9rem;
+    width: 16rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.item5{
+    margin-left: 12rem;
+    font-size: 1.7rem;
+        grid-column: 1/span 2;
+       
+}
+.item5 #msg{
+    margin-left:3rem;
+    height: 6rem;
+    width: 23rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.item6{
+    justify-self: center;
+
+}
+.item6 button{
+    background-color:white;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+}
+.item6 button:hover{
+    background-color:black;
     color: white;
+    cursor: pointer;
+    
+}
+        
+
+/*.contactHeading {
+    font-family: 'Montserrat', sans-serif;
+    padding-top:2.813rem;
+    padding-bottom: 2.813rem;;
+    padding-left: 2.603rem;
+    font-size:2.188rem;
+    font-weight: bold;
+    color:black;
 }
 
 .contactItems {
     display: flex;
     flex-direction: column;
-    color: white;
+    color:black;
 }
 
 .contactItems input {
-    border-radius: 9px;
-    padding: 3px;
-    margin: 5px;
-}
+    border-radius:0.563rem;
+    padding:0.188rem;
+    margin:0.313rem;
+}*/
 
 
 .aboutMain {
     background-color: rgb(252, 250, 254);
-    width: 90vw;
+    width:100%;
 }
 
 .aboutContainer {
-    background-color: rgb(0, 21, 63);
-    height: 74vh;
-    width: 77vw;
-    margin: 80px auto;
-    margin-left: 234px;
+    background-color: rgb(229, 228, 226);
+    height:34.808rem;
+    width: 95rem;
+    margin: 5rem auto;
+   /* margin-left: 234px;*/
     display: flex;
+    margin-top: 10rem;
 }
 
 .faceImg img {
-    width: 427px;
-    height: 527px;
-    margin-left: 40px;
+    width:26.688rem;
+    height:34.738rem;
+    margin-left:17rem;
     display: inline;
 }
 
 .aboutInfo {
     flex-direction: column;
 
-    margin-left: 50px;
-    margin-top: 103px;
-    margin-right: 40px;
+    margin-left:3.125rem;
+    margin-top:6.438rem;
+    margin-right:2.5rem;
     display: inline;
 }
 
 .me {
-    font-size: 17px;
+    font-size:1.063rem;
     font-style: oblique;
-    color: white;
+    color:black;
     display: inline;
     text-align: justify;
 
@@ -251,17 +476,17 @@
 
 .hii {
 
-    font-size: 63px;
+    font-size:3.938rem;
     font-weight: 400;
-    padding-top: 205px;
-    color: white;
+    padding-top:12.813rem;
+    color:black;
     display: inline;
 
 }
 
 .name {
-    font-size: 27px;
-    color: white;
+    font-size:1.688rem;
+    color:black;
     display: inline;
 
 
@@ -271,47 +496,51 @@
 .hamburger {
     position: absolute;
     cursor: pointer;
-    top: 10px;
-    left: 10px;
+    top: 0.625rem;
+    left: 0.625rem;
 }
 
 .cross {
-    margin-left: 198px;
-    margin-top: 10px;
+    margin-left:91.7rem;
+    margin-top:0.188rem;
 }
 
 .sidebarGo {
     position: absolute;
-    transform: translate(-443px, 0px);
+    transform: translate(-102.688rem, 0rem);
 
 }
 
 .certificateMain {
     background-color: white;
-    width: 90vw;
+    width: 100%;
 }
 
 .certificateContainer {
-    background-color: rgb(0, 21, 63);
-    height: 74vh;
-    width: 77vw;
-    margin: 80px auto;
-    margin-left: 234px;
+    background-color: rgb(229, 228, 226);
+    height: 34.808rem;
+    width:95rem;
+    margin:5rem auto;
+    /*margin-left: 234px;*/
+    margin-top: 10rem;
 }
 
 .headerContiner {
-    background-color: rgb(0, 101, 195);
+    background-color: rgb(219,215,210);
 }
 
 .certificateHeading {
-    margin: 32px;
-    background-color: rgb(0, 101, 195);
-    color: white;
+    margin: 2rem;
+    background-color:rgb(219,215,210);
+    margin-left: 17rem;
+    
 }
 
-.list li {
+.certificatelist li {
+    display: flex;
     list-style: none;
-    color: white;
+    margin-left: 6rem;
+    align-items: center;
 }
 
 .certificateContainer {
